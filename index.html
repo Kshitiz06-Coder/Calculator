@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="calculator-container">
+    <div class="display-section">
+        <div class="inputs">
+            <input type="text" id="operand1" placeholder="Num 1" readonly>
+            <input type="text" id="operator" placeholder="" readonly>
+            <input type="text" id="operand2" placeholder="Num 2" readonly>
+        </div>
+        <div class="result-row">
+            <div class="error" id="error-msg"></div>
+            <div class="result" id="result">0</div>
+        </div>
+    </div>
+    
+    <div class="keypad">
+        <button class="btn func" data-val="AC">AC</button>
+        <button class="btn func" data-val="Backspace">DEL</button>
+        <button class="btn op" data-val="%">%</button>
+        <button class="btn op" data-val="/">/</button>
+
+        <button class="btn num" data-val="7">7</button>
+        <button class="btn num" data-val="8">8</button>
+        <button class="btn num" data-val="9">9</button>
+        <button class="btn op" data-val="*">×</button>
+
+        <button class="btn num" data-val="4">4</button>
+        <button class="btn num" data-val="5">5</button>
+        <button class="btn num" data-val="6">6</button>
+        <button class="btn op" data-val="-">-</button>
+
+        <button class="btn num" data-val="1">1</button>
+        <button class="btn num" data-val="2">2</button>
+        <button class="btn num" data-val="3">3</button>
+        <button class="btn op" data-val="+">+</button>
+
+        <button class="btn num zero" data-val="0">0</button>
+        <button class="btn num" data-val=".">.</button>
+        <button class="btn equals" data-val="=">=</button>
+    </div>
+</div>
+
+</body>
+</html>

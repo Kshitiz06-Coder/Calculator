@@ -1,0 +1,100 @@
+* {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #202124; 
+            margin: 0;
+            color: #e8eaed;
+        }
+        .calculator-container {
+            background-color: #303134;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+            padding: 24px;
+            width: 360px;
+        }
+        .display-section {
+            margin-bottom: 20px;
+        }
+        .inputs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .inputs input {
+            width: 100%;
+            padding: 12px 8px;
+            font-size: 1.2rem;
+            border: 1px solid #5f6368;
+            border-radius: 8px;
+            text-align: center;
+            background-color: #202124;
+            color: #e8eaed;
+            outline: none;
+        }
+  
+        #operator {
+            width: 60px;
+            flex-shrink: 0;
+        }
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 40px;
+        }
+        .error {
+            color: #f28b82; 
+            font-size: 0.9rem;
+            max-width: 60%;
+        }
+        .result {
+            font-size: 2.2rem;
+            text-align: right;
+            flex-grow: 1;
+        }
+        .keypad {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+        .btn {
+            padding: 18px 10px;
+            font-size: 1.3rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            background-color: #3c4043;
+            color: #e8eaed;
+            transition: background-color 0.2s, filter 0.1s;
+        }
+        .btn:hover {
+            background-color: #4a4d51;
+        }
+        .btn:active {
+            filter: brightness(0.8);
+        }
+        .btn.op {
+            background-color: #3c4043;
+            color: #8ab4f8; 
+            font-size: 1.5rem;
+        }
+        .btn.func {
+            background-color: #5f6368;
+        }
+        .btn.equals {
+            background-color: #8ab4f8;
+            color: #202124;
+            font-size: 1.5rem;
+        }
+        .btn.equals:hover {
+            background-color: #93bbf9;
+        }
+        .btn.zero {
+            grid-column: span 2; 
+        }
